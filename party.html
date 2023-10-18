@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // console.log("Let's Party!\n");
+        var userInput = prompt("Enter a number: \n");
+        var userint = parseInt(userInput,10);
+        // userInput is string and parseInt take it and converts to decimal number
+        
+        //for loop
+        // for (var i = userInput; i >=1; i-=1){
+        //     console.log(i);
+        // }
+
+        //if statement
+        if (userint < 1) {
+            console.log("PARTY NOW");
+        } else {
+            for (var i = userint; i >= 1; i = i-1) {
+                console.log(i);
+                if (i == 1) {
+                    console.log("Party Time!!");
+                }
+            }
+        }
+       // console.log("Party Time!!!");
+    
+    </script>
+        
+</body>
+</html>
