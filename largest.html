@@ -11,18 +11,18 @@
         // initialized highest num variable as 0
         // will be replacing this 0 inside our for loop
 
-        for (var i =1; i<=5; i=i-1) {
-            var userinput = prompt("\nNumber please...\n: ");
+        for (var i =1; i<=5; i=i+1) {
+            var userinput = prompt("Number please...");
             var userInt = parseInt(userinput,10);
-            console.log("User entered: " + str(userinput) +"\n");
+            console.log("User entered: " + userinput);
             if (userInt > highestnum) {
                 highestnum = userInt;
-                console.log("Updating highest number...\n");
+                console.log("Updating highest number...");
             } else {
-                console.log("this is no the highest number!\n");
+                console.log("this is no the highest number!");
             }
         }
-        console.log("The largest number is : \n" +str(highestnum)+"\n")
+        console.log("The largest number is " +highestnum);
     </script>
 </body>
 </html>
