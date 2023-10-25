@@ -8,14 +8,15 @@
 <body>
     <script>
         var userInput;
-        var sum;
-        var average;
+        var sum = 0 ;
+        var average
         for(var i=1; i<=5; i++){
             userInput = prompt("Enter a Number :\n");
-            sum+=userInput;
+            sum = sum + parseInt(userInput,10);
+            //console.log(sum); debugger
         }
-        average = sum/5;
-        console.log("average is :\n"+average);
+        average = parseFloat(sum/5); // convertedso that the expression will result in decimal point character
+        console.log("average is :\n"+ average);
     </script>
 </body>
 </html>
